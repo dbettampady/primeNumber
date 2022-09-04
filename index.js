@@ -8,10 +8,10 @@ function isPrime(num) {
         }
     }
     if(prime){
-	console.log("Number is Prime");
+		console.log("Number is Prime");
     }
     else{
-	console.log("Number is Composite");
+		console.log("Number is Composite");
     }
 }
 
