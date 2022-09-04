@@ -1,22 +1,18 @@
-function isPrime(num){
-	var prime = 1;
-	if(num == 0 || num == 1){
-		console.log("0 and 1 are neither prime or composite");
-	}else if(num == 2){
-		console.log(num+" is a prime number");
-	}else{
-		for(var i=2; i<num/2; i++){
-			if(num %i == 0){
-				prime = 0;
-				break;
-			}
-		}
-	}
-	if(prime == 1){
-		console.log("Number is prime");
-	}else{
-		console.log("Number is composite");
-	}
+function isPrime(num) {
+  var sqrtnum=Math.floor(Math.sqrt(num));
+    var prime = num != 1;
+    for(var i=2; i<sqrtnum+1; i++) { // sqrtnum+1
+        if(num % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+    if(prime){
+	console.log("Number is Prime");
+    }
+    else{
+	console.log("Number is Composite");
+    }
 }
 
 isPrime(2);
